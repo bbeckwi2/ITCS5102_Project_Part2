@@ -2,6 +2,7 @@ use strict;
 use warnings;
 use Data::Dumper qw(Dumper);
 
+#Process 
 our $input = shift;
 my @chars = split(//, $input);
 my $len = scalar @chars;
@@ -15,7 +16,7 @@ sub printA {
 }
 
 
-#Heap's algorithm
+#Heap's algorithm (B. R. Heap, 1963)
 my $i=0;
 my @j = (0) x $len;
 printA @chars;
